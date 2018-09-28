@@ -48,3 +48,8 @@ nnoremap <C-H> <C-W><C-H>
 
 set splitbelow
 set splitright
+
+"airline config
+let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#formatter = 'unique_tail_improved'
+let g:airline_theme='badwolf'

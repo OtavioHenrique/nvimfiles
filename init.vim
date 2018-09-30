@@ -16,6 +16,9 @@ map <C-n> :NERDTreeToggle<CR>
 "clipboard with OS
 set clipboard=unnamedplus
 
+"1ms, default normally is 4ms
+set updatetime=100
+
 "tab naviagtion crl + left/right
 nnoremap <C-Left> :tabprevious<CR>
 nnoremap <C-Right> :tabnext<CR>

@@ -20,11 +20,11 @@ set clipboard=unnamedplus
 set updatetime=100
 
 "tab naviagtion crl + left/right
-nnoremap <C-Left> :tabprevious<CR>
-nnoremap <C-Right> :tabnext<CR>
+nnoremap <S-Left> :tabprevious<CR>
+nnoremap <S-Right> :tabnext<CR>
 
 "settin font
-set guifont=Monospace\ 18
+set guifont=Monospace\ 12
 
 set autoindent
 
@@ -56,3 +56,9 @@ set splitright
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#formatter = 'unique_tail_improved'
 let g:airline_theme='badwolf'
+
+"vim hardmode, adding to stop using arrow keys on insert mode
+let g:list_of_normal_keys = []
+let g:list_of_visual_keys = []
+let g:list_of_insert_keys = ["<UP>", "<DOWN>", "<LEFT>", "<RIGHT>"]
+let g:list_of_disabled_keys = []

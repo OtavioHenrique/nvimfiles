@@ -13,8 +13,21 @@ set number
 let g:NERDTreeWinPos="left"
 map <C-n> :NERDTreeToggle<CR>
 
-"clipboard with OS
-set clipboard=unnamedplus
+"clipboard with OS / To work properly install xclip
+if system('uname -s') == "Darwin\n"
+  set clipboard=unnamed "OSX
+  set clipboard+=unnamedplus
+else
+  set clipboard+=unnamedplus
+  set clipboard=unnamedplus "Linux
+endif
+
+map <Leader>y "*y
+map <Leader>p "*p
+
+"load pathogen managed plugins
+call pathogen#infect()
+call pathogen#helptags()
 
 "1ms, default normally is 4ms
 set updatetime=100
@@ -31,12 +44,9 @@ set autoindent
 "necessary on some Linux distros for pathogen to properly load bundles
 filetype on
 
-"load pathogen managed plugins
-call pathogen#infect()
-call pathogen#helptags()
-
 "turn on syntax highlighting
 syntax on
+filetype plugin indent on
 
 "setting tab to use spaces
 :set expandtab
@@ -62,3 +72,7 @@ let g:list_of_normal_keys = []
 let g:list_of_visual_keys = []
 let g:list_of_insert_keys = ["<UP>", "<DOWN>", "<LEFT>", "<RIGHT>"]
 let g:list_of_disabled_keys = []
+
+":sp 
+":vsp
+"https://robots.thoughtbot.com/running-specs-from-vim

@@ -58,3 +58,6 @@
 [submodule "bundle/vim-airline"]
 	path = bundle/vim-airline
 	url = https://github.com/vim-airline/vim-airline.git
+[submodule "bundle/vim-orbital"]
+	path = bundle/vim-orbital
+	url = https://github.com/fcpg/vim-orbital.git

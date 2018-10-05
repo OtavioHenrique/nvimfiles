@@ -70,12 +70,13 @@ let g:airline#extensions#tabline#formatter = 'unique_tail_improved'
 let g:airline_theme='badwolf'
 
 "vim hardmode, adding to stop using arrow keys on insert mode
+let g:hardtime_default_on = 1
 let g:list_of_normal_keys = []
 let g:list_of_visual_keys = []
 let g:list_of_insert_keys = ["<UP>", "<DOWN>", "<LEFT>", "<RIGHT>"]
 let g:list_of_disabled_keys = []
 
-":sp 
+":sp
 ":vsp
 "https://robots.thoughtbot.com/running-specs-from-vim
 set statusline+=%#warningmsg#

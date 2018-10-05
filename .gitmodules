@@ -61,3 +61,6 @@
 [submodule "bundle/vim-orbital"]
 	path = bundle/vim-orbital
 	url = https://github.com/fcpg/vim-orbital.git
+[submodule "bundle/vim-markdown"]
+	path = bundle/vim-markdown
+	url = https://github.com/gabrielelana/vim-markdown.git

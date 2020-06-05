@@ -1,4 +1,4 @@
-colorscheme orbital
+colorscheme ir_black
 
 "Line spacing
 set linespace=3
